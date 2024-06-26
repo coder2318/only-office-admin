@@ -1,0 +1,29 @@
+{
+  "menu": [
+    {
+      "url": "/",
+      "name": "Dashboards",
+      "icon": "menu-icon tf-icons mdi mdi-home-outline",
+      "slug": "dashboard",
+      "badge": [
+        "danger",
+        "5"
+      ]
+    },
+    {
+      "url": "document",
+      "icon": "menu-icon tf-icons mdi mdi-table",
+      "name": "Document List",
+      "slug": "tables-basic"
+    },
+    {
+      "url": "document-history",
+      "icon": "menu-icon tf-icons mdi mdi-table",
+      "name": "Document History List",
+      "slug": "tables-basic"
+    },
+    {
+      "menuHeader": "Forms & Tables"
+    }
+  ]
+}
