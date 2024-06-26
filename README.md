@@ -92,7 +92,14 @@ php artisan db:seed
 email: "test@example.com",
 password: 123456
 ```
-7. Applicationni run qilish
+
+7. Storage papkani publicga link qilish
+
+```bash
+php artisan storage:link
+```
+
+8. Applicationni run qilish
 
 ```bash
 php artisan serve
