@@ -16,5 +16,6 @@ return [
 
     'host' => env('ONLY_OFFICE_HOST', 'http://localhost:8181'),
     'algorithm' => env('ALGORITHM', 'HS256'),
+    'secretToken' => env('SECRET_TOKEN', 'oA2Jzht2MTeQtYOL48rsC19ZD8BP4T'),
 
 ];

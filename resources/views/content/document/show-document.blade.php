@@ -38,42 +38,16 @@
     docEditor.destroyEditor();
     window.location.href = "{{route('document.index')}}"
   };
+
   let docEditor = new DocsAPI.DocEditor('placeholder', {
-    document: {
-      info: {
-        uploaded: time
-      },
-      fileType: 'docx',
-      key: "{{$document->key}}".time,
-      title: "{{$document->name}}",
-      url: "{{asset($document->path.'/'.$document->name)}}",
-      permissions: {
-        edit: true,
-        download: true
-      }
-    },
-    documentType: 'text',
-    editorConfig: {
-      mode : 'edit',
-      callbackUrl: "{{route('document.save', ['id' => $document->id])}}",
-      user : {
-        id : {{$user_id}},
-        name : 'Farrukh'
-      },
-      customization: {
-        autosave: true,
-        close: {
-          visible: true,
-          text: 'Close file'
-        }
-      }
-    },
+    document: @json($payload['document']),
+    documentType: @json($payload['documentType']),
+    editorConfig: @json($payload['editorConfig']),
     events: {
       onOutdatedVersion: onOutdatedVersion,
       onRequestClose: onRequestClose
     },
-    width: '100%',
-    height: '100%'
+    token: "{{ $payload['token'] }}"
   });
 
 </script>

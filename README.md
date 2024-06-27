@@ -49,6 +49,12 @@ ni qoyish
   8181
 ```
 
+3. project .env fayliga local.jsondagi services.CoAuthoring.secret dagi tokenni
+qo'yish kerak
+
+```bash
+SECRET_TOKEN={token}
+```
 
 <h2>Application run</h2>
 
